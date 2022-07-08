@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--Scroll Reveal Script-->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="styles.css">
+    <title>My First Proyect</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top nav-height">
+        <p class="text-center text-primary mr-5 ml-5 pt-2 align-middle txt logo">El Rincón Del Geek</p>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Index.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://randomuser.me/api/">Random User Api</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="iniciarsesion.html">Iniciar Sesión</a>
+                        <a class="dropdown-item" href="contactenos.html">Contactenos</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+    <div class="jumbotron img">
+        <div class="bg-light rounded">
+            <h1 class="display-3 text-center"><strong>¿Quienes Somos?</strong></h1>
+            <p class="lead text-center pr-5 pl-5"> <strong>El Rincon Del Geek</strong> es una idea que nació en el año 2021 donde nos encargamos de compartir información inportante acerca de la tecnología. Pero no solo nos limitamos a compartir información acerca de las últimas novedades tecnologicas
+                si no que también ofrecemos cursos de tecnología, tales como <strong>Desarrollo Web; Front-End, Back-End y Full Stack</strong>. Pero eso no es todo, además ofrecemos cursos de <strong>Bases de Datos tales como MySql, MongoDB</strong> y
+                Mucho Más.
+            </p>
+            <hr class="my-2">
+        </div>
+        <p class="lead">
+            <a Id="jumboton" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#jumboEmergente">Ver 
+                Información
+            </a>
+        </p>
+    </div>
+
+
+    <main>
+
+        <!-- Ventana Emergente del Botón del Jumbotron-->
+        <div id="jumboEmergente" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modelTitleId">
+            <div class="modal-dialog">
+                <div class="modal-content jumboEmer">
+                    <div class=" bg-dark w-100 mb-1 divtxt">
+                        <h1 class="text-white d-flex justify-content-around mt-2 logotxt">El Rincón del Geek</h1>
+                    </div>
+                    <div id="imgEmer" class=" modal-header w-100">
+                        <img class="rounded-circle d-block m-auto" width="140px" height="140px" src="img/Greeney.png" alt="">
+                    </div>
+
+                    <h2 id="tituloEmer" class="text-center text-white"></h2>
+                    <p id="descripcionEmer" class="text-center text-white"></p>
+
+
+                    <div class="cont-icons">
+                        <div class="icon-box">
+                            <img src="img/user-1_icon-icons.com_65106.png" class="icon" onclick="verinfo1()" alt="">
+                        </div>
+                        <div class="icon-box">
+                            <img src="img/inbox_letter_contact_envelope_mail_email_icon_220346.png" class="icon" onclick="verinfo2()" alt="">
+                        </div>
+                        <div class="icon-box">
+                            <img src="img/day15oncalendar_120825.png" class="icon" onclick="verinfo3()" alt="">
+                        </div>
+                        <div class="icon-box">
+                            <img src="img/location_4679.png" class="icon" onclick="verinfo4()" alt="">
+                        </div>
+                        <div class="icon-box">
+                            <img src="img/telephone-receiver_icon-icons.com_56033.png" class="icon" onclick="verinfo5()" alt="">
+                        </div>
+                        <div class="icon-box">
+                            <img src="img/closed-lock_icon-icons.com_56097.png" class="icon" onclick="verinfo6()" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Fin ventana emergente-->
+
+
+        <!--Testimonios Inicio-->
+        <div class="row">
+
+            <!-- Wrap the rest of the page in another container to center all the content. -->
+
+            <div class="container marketing principal">
+
+                <!-- Three columns of text below the carousel -->
+                <div class="row testimonios p-5 rounded-lg">
+                    <div class="text-testimonios w-100">
+                        <h2 class="text-center">Lee los Testimonios de Nuestros Alumnos</h2>
+                    </div>
+                    <div class="col-lg-4">
+                        <div id="info1">
+                            <div>
+                                <img class="rounded-circle rounded-lg d-block m-auto " width="140px " height="140px " src="img/Estudiante1.png " alt=" ">
+                            </div>
+
+                            <h2 class="text-center ">Alice</h2>
+                            <p class="text-center ">La academia es lo mejor me ha preparado de una manera excelente y ahora soy una desarrolladora web profesional, me dedico a la parte del cliente (<strong>Front-end</strong>) pero planeo seguir estudiando ya que me gusta mucho
+                                lo que hago.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 offset-lg-3 ">
+                            <button id="infoToggle1" class="btn btn-primary " role="button ">Ver Detalles &raquo;</button>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4 ">
+                        <div id="info2">
+                            <div>
+                                <img class="rounded-circle rounded-lg d-block m-auto " width="140px " height="140px " src="img/estudiante2.jpg " alt=" ">
+                            </div>
+
+                            <h2 class="text-center ">Marck</h2>
+                            <p class="text-center ">Yo estudié en la academía, no fue facil al principio me costaba mucho pero gracias a la paciencia y la dedicación de los profesores ahora soy un <strong>Full Stack Developer</strong>. Creo que si no hubiera sido por la inspiración
+                                y el ánimo que ellos me daban hubiera desistido.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 offset-lg-3 ">
+                            <button id="infoToggle2" class="btn btn-primary " href="# " role="button ">Ver Detalles &raquo;</button>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4 ">
+                        <div id="info3">
+                            <div>
+                                <img class="rounded-circle rounded-lg d-block m-auto " width="140px " height="140px " src="img/estudiante3.jpg " alt=" ">
+                            </div>
+
+                            <h2 class="text-center ">Charlott</h2>
+                            <p class="text-center "> Hace algún tiempo había estudiado <strong>Bases de Datos y Back-End</strong> y la verdad me gustó mucho así que decidí estudiar también <strong>Front end</strong> y ahora soy una desarrolladora muy buena.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 offset-3 ">
+                            <button id="infoToggle3" class="btn btn-primary " href="# " role="button ">Ver Detalles &raquo;</button>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-4 -->
+                </div>
+                <!-- /.row -->
+                <!--Testimonios Final-->
+
+                <!--Donde Estamos Ubicados-->
+                <div class="direccion">
+                    <h3 class="text-center ">Estamos Ubicados en el Centro Social El Surá en Cariari, Pococí, Limón. Puedes visitarnos cuando gustes y o escribenos un correo y te informaremos de nuestros cursos y los precios que manejamos.</h3>
+
+                    <iframe class="mapscroll" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448.74937530470464!2d-83.73428660136803!3d10.35950666066736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0b0391b50a671%3A0x793e59828eae9bf5!2sCentro%20Social%20El%20Sura!5e0!3m2!1ses!2scr!4v1657229742531!5m2!1ses!2scr"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- START THE FEATURETTES -->
+
+                <hr class="featurette-divider">
+
+                <section class="d-inline-block">
+                    <div class="row featurette">
+                        <div class="col-md-7 order-md-2 scroll-txt">
+                            <h2 class="featurette-heading">Somos Lo Mejor de lo mejor. <span class="text-muted">No nos crees, mira por ti mismo.</span></h2>
+                            <p class="lead">Nuestros alumnos y las personas que leén nuestros artículos no mienten. Te retamos a comprobarlo. Como instituto nos comprometemos a dar lo mejor de nosotros mientras te enseñamos a ser un profesional.
+                            </p>
+                        </div>
+                        <div class="col-md-5 order-md-1">
+                            <img class="w-100 imgdireccion" src="img/instalaciones.png" alt="Foto del Centro Social El Surá">
+                        </div>
+                    </div>
+
+                    <div class="listsection w-100 d-flex justify-content-around mt-5">
+                        <ul class="ulsec d-flex w-75 justify-content-around">
+                            <li class="lisec">Hecho por: Moises Barilla F.</li>
+                            <li class="lisec">E-mail: moi.bar.f@gmail.com</li>
+                            <li class="lisec"> Teléfono: 506-8428-2758</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <hr class="featurette-divider">
+
+
+
+                <!-- /END THE FEATURETTES -->
+
+            </div>
+            <!-- /.container -->
+
+            <!-- FOOTER -->
+            <footer class="container ">
+                <p class="float-right "><a href="# ">Back to top</a></p>
+                <p class="text-center">&copy; 2021-2022 Moises Barilla F. &middot; <a href="# ">Privacy</a> &middot; <a href="# ">Terms</a></p>
+            </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js "></script>
+    <!--Main Js-->
+    <script src="main.js "></script>
+
+</body>
+
+</html>

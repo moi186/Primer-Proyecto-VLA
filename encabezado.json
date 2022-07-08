@@ -1,0 +1,10 @@
+{
+    "encabezados": [{
+        "nombre": "Mi nombre es:",
+        "Email": "Mi Dirección de Email Es:",
+        "Edad": "Mi Edad Es:",
+        "Direccion": "Yo Vivo en:",
+        "Telefono": "Mi Número de Teléfono es:",
+        "Usuario": "Mi Usuario Es:"
+    }]
+}

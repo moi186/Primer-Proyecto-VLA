@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--Scroll Reveal Script-->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="contactenos.css">
+    <title>Contactenos</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top nav-height">
+        <p class="text-center text-primary mr-5 ml-5 pt-2 align-middle txt logo">El Rincón Del Geek</p>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Index.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://randomuser.me/api/">Random User Api</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="iniciarsesion.html">Iniciar Sesión</a>
+                        <a class="dropdown-item" href="contactenos.html">Contactenos</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="container w-75 contenedor">
+                <div class="row">
+                    <div class="col-12">
+                        <form class="mt-5">
+                            <div class="card-body">
+                                <h1 class="text-center text-white">Contactenos</h1>
+
+                                <div class="form-group oculto">
+                                    <label for="nombre" class="text-white"> Nombre y Apellidos</label>
+                                    <input id="nombre" type="text" class="form-control" placeholder="Nombre y Apellidos" required>
+                                </div>
+
+                                <div class="form-group oculto">
+                                    <label for="email" class="text-white">Número de Teléfono</label>
+                                    <input type="email" class="form-control" placeholder="Correo Electrónico" required>
+                                </div>
+                                <div class="form-group oculto oculto">
+                                    <label for="tel" class="text-white">Número de Teléfono</label>
+                                    <input id="tel" type="tel" class="form-control" placeholder="Número de Teléfono" required>
+                                </div>
+                                <div class="form-group oculto">
+                                    <label for="comentarios" class="text-white">Comentarios</label>
+                                    <textarea id="comentarios" class="d-block w-100 rounded" name="comentarios" cols="30" rows="5"></textarea>
+                                </div>
+
+                                <div class="form-group oculto">
+                                    <input id="quejas" type="radio" name="boton">
+                                    <label for="quejas" class="text-secondary">QUEJAS Y SUGERENCIAS - Contralora de servicios</label>
+                                </div>
+                                <div class="form-group oculto">
+                                    <input id="mejorar" type="radio" name="boton">
+                                    <label for="mejorar" class="text-secondary">AYÚDENOS A MEJORAR - Sobre el sitio web
+                            </label>
+                                </div>
+                                <div class="form-group aparecer">
+                                    <button type="submit" class="btn btn-primary text-center d-block w-100">Enviar</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- FOOTER -->
+                <footer class="container ">
+                    <p class="float-right "><a href="# ">Back to top</a></p>
+                    <p class="text-center">&copy; 2021-2022 nëo &middot; <a href="# ">Privacy</a> &middot; <a href="# ">Terms</a></p>
+                </footer>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    //scroll reveal
+    <script src="contactenos.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #fefefe;
+}
+
+
+/*Estilos Ventana Emergente */
+
+.divtxt {
+    height: 50px;
+}
+
+.logotxt {
+    font-size: 22px;
+    font-family: 'Pacifico', cursive;
+}
+
+.jumboEmer {
+    background-color: #4a81c0;
+}
+
+.cont-icons {
+    align-items: center;
+    background: linear-gradient(#4a81c0, #8abaf0);
+    cursor: pointer;
+    display: flex;
+    height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.icon {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-box:hover {
+    border-radius: 5px;
+    background: #8abaf0;
+    padding: 12px;
+    width: 50px;
+}
+
+
+/*Fin Estilos de Ventana Emergente*/
+
+
+/*nav*/
+
+.nav-height {
+    height: 75px;
+    margin-bottom: 0;
+}
+
+.txt {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+}
+
+
+/*jumbotron*/
+
+.img {
+    margin-top: 11px;
+    background: url(img/jm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: fit-content;
+    height: 500px;
+}
+
+
+/*Fin Jumbotron*/
+
+.principal {
+    background: linear-gradient(#8abaf0, #ffffff);
+    width: 100%;
+}
+
+
+/*Testimonios*/
+
+.testimonios {
+    margin-top: 25px;
+    width: 100%;
+}
+
+
+/*Dirección*/
+
+.imgdireccion {
+    box-shadow: 3px 3px 7px 5px;
+}
+
+
+/*Lista del Section*/
+
+.ulsec {
+    list-style-type: none;
+}
+
+.lisec {
+    font-weight: bold;
+}
