@@ -61,6 +61,7 @@ main {
 .nav-height {
     height: 75px;
     margin-bottom: 0;
+    width: 100%;
 }
 
 .txt {
@@ -113,3 +114,5 @@ main {
 .lisec {
     font-weight: bold;
 }
+
+@media screen {}
